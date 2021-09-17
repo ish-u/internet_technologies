@@ -30,9 +30,45 @@
     </div>
 
 
-    <div>
+    <div class="container" id="node-methods">
       <h2>Node Methods</h2>
-      
+      <form onsubmit="addToList(event)">
+        <input type="text" placeholder="Add Something" id="to-add">
+        <button type="submit">Add</button>
+      </form>
+      <ul id="list"></ul>
+      Actions :-
+      <ul>
+        <li><button onclick="getFirstChild()">Get First Child</button></li>
+        <li><button onclick="getLastChild()">Get Last Child</button></li>
+        <li><button onclick="getParentNode()">Get Parent Node</button></li>
+        <li><button onclick="removeFirst()"> Remove First Child </button></li>
+        <li><button onclick="getChildNodes()">Get Child Nodes </button></li>
+        <li>Click On Element to get Next Sibling</li>
+        <li>Double-Click On Element to get Previous Sibling</li>
+      </ul>
+      Output :- <span id="action"></span>
+    </div>
+
+
+    <div class="container">
+      <h2>Attribute Demo</h2>
+      Get Attributes of the element below <br><br>
+      <span class="some-special-class" id="id-of-this-element" style="font-weight:1000; margin:25px">
+        A Span Element
+      </span>
+      <button onclick="displayAttr()">Display Attributes</button>
+      <br>
+      <br>
+      <span id="display-attributes">
+      </span>
+      <br>
+      Change Color of all 'li' tags
+      <ul>
+        <li><button onclick="changeColor('red')">Red</button></li>
+        <li><button onclick="changeColor('blue')">Blue</button></li>
+        <li><button onclick="changeColor('green')">Green</button></li>
+      </ul>
     </div>
   </body>
 </html>
