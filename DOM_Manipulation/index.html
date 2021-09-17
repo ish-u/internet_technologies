@@ -9,10 +9,14 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <h1>DOM Manipulation</h1>
+    <h1 style="padding:5px;margin:20px;">
+      <u>
+        DOM Manipulation
+      </u>
+    </h1>
 
     <div class="container">
-      <h3>getElementById and innerHTML</h3>
+      <h2>getElementById and innerHTML Demo</h2>
       <ul>
         <li onclick="changeText(this)">
           Sentence One </em>
@@ -31,13 +35,15 @@
 
 
     <div class="container" id="node-methods">
-      <h2>Node Methods</h2>
+      <h2>Node Methods Demo</h2>
       <form onsubmit="addToList(event)">
         <input type="text" placeholder="Add Something" id="to-add">
         <button type="submit">Add</button>
       </form>
       <ul id="list"></ul>
-      Actions :-
+      <b>
+        Actions :-
+      </b>
       <ul>
         <li><button onclick="getFirstChild()">Get First Child</button></li>
         <li><button onclick="getLastChild()">Get Last Child</button></li>
@@ -47,7 +53,12 @@
         <li>Click On Element to get Next Sibling</li>
         <li>Double-Click On Element to get Previous Sibling</li>
       </ul>
-      Output :- <span id="action"></span>
+      <em>(add something in list for some action</em>)<br> <br>
+      <b>
+        Output :-
+      </b>
+      
+      <span id="action"></span>
     </div>
 
 
