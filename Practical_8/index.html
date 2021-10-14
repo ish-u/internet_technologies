@@ -5,14 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>BSc. H CS</title>
   </head>
+  <script>
+    $(function () {
+      $("#change").click(() => {
+        $("body").css({
+          "font-family": "monospace",
+          "font-size": "16px",
+          background: "#eee",
+        });
+        $("h3").css({ "text-decoration": "underline", "font-size": "24px" });
+        $("h1").css({ "font-size": "48px" });
+        $("table").css({
+          "border-collapse": "collapse",
+          "text-align": "center",
+          margin: "25px 0px",
+        });
+        $("table td").css({
+          border: "1px solid #bbb",
+          padding: "15px",
+        });
+        $("table th").css({
+          border: "1px solid #bbb",
+          padding: "7.5px",
+        });
+        $(".eligibility span").css("font-weight", "900");
+        $("li").css({ margin: "5px" });
+      });
+    });
+  </script>
   <body>
     <div class="container">
       <h1>
         <b>BSc.(H) Computer Science </b>
       </h1>
-      <div class="eee">
+      <div class="fee">
         <h3>Fees</h3>
         <span> Rs. 50500 per Year </span>
         <br />
@@ -165,8 +194,8 @@
           <li>Management</li>
         </ul>
       </div>
-      <div>
-        <button>Modify CSS</button>
+      <div style="margin: 10px">
+        <button id="change">Modify CSS</button>
       </div>
     </div>
   </body>
