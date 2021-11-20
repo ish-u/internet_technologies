@@ -11,6 +11,7 @@ $(function () {
   var $veg = $(".veg");
   var $nonVeg = $(".non-veg");
   var $switch = $("#switch");
+  $switch.addClass("veg-button");
   $nonVeg.hide();
 
   $switch.click(() => {
